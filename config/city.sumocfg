@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <!-- Road network with traffic lights -->
+        <net-file value="../map/city_tls.net.xml"/>
+
+        <!-- Vehicle routes -->
+        <route-files value="../routes/city.rou.xml"/>
+    </input>
+
+    <time>
+        <!-- Simulation start and end time -->
+        <begin value="0"/>
+        <end value="7200"/> <!-- 2 hours simulation -->
+    </time>
+
+    <output>
+        <!-- Summary output -->
+        <summary-output value="../output/summary.xml"/>
+
+        <!-- Detailed trip info -->
+        <tripinfo-output value="../output/tripinfo.xml"/>
+    </output>
+
+    <report>
+        <!-- Less console noise -->
+        <verbose value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
